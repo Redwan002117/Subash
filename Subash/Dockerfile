@@ -70,7 +70,7 @@ COPY --from=builder /app/node_modules/.bin/prisma ./node_modules/.bin/prisma
 COPY --from=builder /app/node_modules/csv-parser ./node_modules/csv-parser
 
 # Compiled seed script — runs at first boot to import all perfumes
-COPY --from=builder /app/.ts-out/prisma/import-csv.js ./scripts/seed.js
+COPY --from=builder /app/.ts-out/import-csv.js ./scripts/seed.js
 
 # The two CSV data files (total ~37MB, embedded in image once)
 COPY --from=builder /app/prisma/fra_perfumes.csv ./prisma/fra_perfumes.csv
