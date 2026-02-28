@@ -45,7 +45,7 @@ DATABASE_URL=postgresql://subash_user:use_something_strong_here@db:5432/subash_d
 
 # Auth  (generate: openssl rand -base64 32)
 AUTH_SECRET=<generated-secret>
-AUTH_URL=http://<casaos-ip>:3000
+AUTH_URL=http://<casaos-ip>:9864
 
 # Weather
 OPENWEATHERMAP_API_KEY=<your-key>
@@ -59,7 +59,7 @@ GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
 FACEBOOK_CLIENT_ID=
 FACEBOOK_CLIENT_SECRET=
-NEXT_PUBLIC_SITE_URL=http://<casaos-ip>:3000
+NEXT_PUBLIC_SITE_URL=http://<casaos-ip>:9864
 ```
 
 ---
